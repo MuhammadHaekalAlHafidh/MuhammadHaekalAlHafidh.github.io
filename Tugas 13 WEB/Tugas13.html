@@ -1,0 +1,56 @@
+<html>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <body>
+        <div class="w3-container-fluid">
+            <img src="haekal.jpg" width="100%">
+        </div>
+        <center>
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Avenged Sevenfold')">Avenged Sevenfold</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Matt Shadows')">Matt Shadows</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Synyster Gates')">Synyster Gates</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Zacky')">Zacky</button>
+        </div>
+        <div id="Home" class="w3-container kota w3-animate-zoom w3-padding-16" style="display:none">
+            <img src="welcome.jpeg" width="40%">
+        </div>
+        <div id="Avenged Sevenfold" class="w3-container kota w3-animate-fading w3-padding-16" style="display:none">
+            <img src="sevenfold.jpg" width="40%">
+            <p>Avenged Sevenfold was known for the metalcore genre on their debut Sounding the Seventh Trumpet, 
+               which contains lots of scream vocals. The band changed their style on their third album, City of Evil, 
+               featuring melodic vocals and power ballads. The band continued to explore new sounds with the release titled Avenged Sevenfold
+               and enjoyed success before dying of heart disease due to the combined effects of drugs and alcohol on his body in 2009.</p>
+        </div>
+        <div id="Matt Shadows" class="w3-container kota w3-animate-bottom w3-padding-16" style="display:none">
+            <img src="matt.jpg" width="40%">
+            <p>Shadows, like the other members of Avenged Sevenfold, uses a stage name. In an interview, 
+               Shadows says that he chose his stage name because he thought of himself as "the darker character in the group".</p>
+        </div>
+        <div id="Synyster Gates" class="w3-container kota w3-animate-top w3-padding-16" style="display:none">
+            <img src="systergate.jpg" width="40%">
+            <p>Synyster Gater entered the band Avenged Sevenfold as a guitarist when he was 18 years old in late 1999. 
+                He also played piano on the songs "Beast and the Harlot" and "Sidewinder". He composed his first song titled "So Far Away" 
+                in memory of his friend and drummer for Avenged Sevenfold.</p>
+        </div>
+        <div id="Zacky" class="w3-container kota w3-animate-zoom w3-padding-16" style="display:none">
+            <img src="zacky.jpg" width="40%">
+            <p>Zacky said that before he entered Avenged Sevenfold, he had been a member of a punk rock band 
+                called MPA which failed to achieve success. So Zacky and M. Shadows formed Avenged Sevenfold.</p>
+        </div>
+<script>
+function openKota(namakota) 
+{
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++)
+{
+ x[i].style.display = "none"; 
+}
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
